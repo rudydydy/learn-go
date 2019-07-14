@@ -10,7 +10,7 @@ import (
 )
 
 // Creata a new type of 'deck'
-// which is a silice of string
+// which is a slice of string
 type deck []string
 
 func newDeck() deck {
@@ -54,7 +54,7 @@ func (d deck) saveToFile(filename string) error {
 }
 
 func newDeckFromFile(filename string) deck {
-    bs, err := ioutil.ReadFile(filename )
+    bs, err := ioutil.ReadFile(filename)
 
     if err != nil {
          fmt.Println("Error:", err)
